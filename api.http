@@ -1,0 +1,26 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "agora ta tudo certo",
+    "details": "Um evento para quem é louco",
+    "maximumAttendees": 5
+}
+
+###
+
+POST http://localhost:3333/events/ab196c9f-7ece-4267-89d9-d0f6118ed5b2/attendees
+Content-Type: application/json
+
+{
+    "name": "bruno ricardo",
+    "email": "bruno@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/ab196c9f-7ece-4267-89d9-d0f6118ed5b2
+
+###
+
+GET http://localhost:3333/attendees/13/badge
