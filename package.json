@@ -8,6 +8,9 @@
   },
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.12.4",
     "prisma": "^5.12.1",
@@ -15,6 +18,8 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
+    "@fastify/swagger": "^8.14.0",
+    "@fastify/swagger-ui": "^3.0.0",
     "@prisma/client": "^5.13.0",
     "fastify": "^4.26.2",
     "fastify-type-provider-zod": "^1.1.9",
